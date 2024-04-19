@@ -21,4 +21,3 @@ cumpleaños = datetime(2001,1,28)
 
 timestamp = cumpleaños.timestamp()
 
-cumpleaños = cumpleaños + relativedelta()
