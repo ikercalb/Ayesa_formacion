@@ -7,12 +7,15 @@ dias = ['Lunes','Martes','Miercoles']
 jueves = ['Jueves']
 dias+jueves 
 
+#lista[xprincipio : xfinal] el principio sale el final se excluye.
 
 numeros[1] = 1.5
 numeros.index(1.5)
 numeros.remove(1.5)
 
 1.5 in numeros
+
+
 
 
 #EJERCICIO 4
