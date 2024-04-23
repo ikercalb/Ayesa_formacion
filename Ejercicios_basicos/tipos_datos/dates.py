@@ -1,23 +1,35 @@
-import datetime 
-datetimeObject = datetime.datetime.now()
+import datetime
+from dateutil.relativedelta import relativedelta
 
-datetimeObject = datetime.date.today()
+# datetimeObject = datetime.datetime.now()
 
-d = datetime.date(2019,6,6)
+# datetimeObject = datetime.date.today()
 
-d = datetime.date.fromtimestamp(1559811600)
+# d = datetime.date(2019,6,6)
 
-d = datetime.date.fromisoformat('1999-01-01 17:34:45.345')
+# d = datetime.date.fromtimestamp(1559811600)
 
-today = datetime.datetime.time()
-print(today.year)
+# d = datetime.date.fromisoformat('1999-01-01 17:34:45.345')
 
-#intervalos de tiempo 
-now = datetime.datetime.now()
-intervalo = datetime.timedelta(days=5, hours=2)
+# today = datetime.datetime.time()
+# print(today.year)
+
+# #intervalos de tiempo 
+# now = datetime.datetime.now()
+# intervalo = datetime.timedelta(days=5, hours=2)
 
 #ejercicio 8
-cumpleaños = datetime(2001,1,28)
 
-timestamp = cumpleaños.timestamp()
+fecha_cumpleaños = input("Introduce tu fecha de cumpleaños (YYYY-MM-DD): ")
+cumpleaños = datetime.datetime.strptime(fecha_cumpleaños, "%Y-%m-%d")
 
+print(cumpleaños)
+
+print(datetime.datetime.today()-cumpleaños)
+
+print(cumpleaños.year)
+
+print(cumpleaños.timestamp())
+
+fecha = cumpleaños + relativedelta(month=+1)
+print(fecha)

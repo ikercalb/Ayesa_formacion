@@ -2,25 +2,34 @@ from os import system
 
 print("Ejercicio 15")
 
-a = input("Primer jugador: pi, pa, ti")
+primero = input("Primer jugador: pi, pa, ti")
 system("cls")
-b = input("Segundo jugador: pi, pa, ti")
+segundo = input("Segundo jugador: pi, pa, ti")
 system("cls")
-if  a == "pi" and b == "pi":
+
+if  primero == "pi" and segundo == "pi":
          print("empate")
-elif a == "pi" and b == "pa":
+         
+elif primero == "pi" and segundo == "pa":
          print("Gana jugador 2")
-elif a == "pi" and b == "ti":
+         
+elif primero == "pi" and segundo == "ti":
          print("Gana jugador 1")
-elif a == "pa" and b == "pi":
+         
+elif primero == "pa" and segundo == "pi":
          print("Gana jugador 1")
-elif a == "pa" and b == "pa":
+         
+elif primero == "pa" and segundo == "pa":
          print("empate")
-elif a == "pa" and b == "ti":
+         
+elif primero == "pa" and segundo == "ti":
          print("Gana jugador 2")
-elif a == "ti" and b == "pi":
+         
+elif primero == "ti" and segundo == "pi":
          print("Gana jugador 2")
-elif a == "ti" and b == "pa":
+         
+elif primero == "ti" and segundo == "pa":
          print("Gana jugador 1")
-elif a == "ti" and b == "ti":
+         
+elif primero == "ti" and segundo == "ti":
           print("empate")

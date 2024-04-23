@@ -32,13 +32,23 @@ a.issuperset(b)
 
 #ejercicio 7
 
-maria = {'GYD', 'DUS', 'PFO', 'ESB', 'GRX', 'HEL', 'BUD', 'KRR', 'SVQ', 'OLB', 'PSR', 'HEL', 'PFO', 'SVQ', 'LED'}
-luis = {'MXP', 'GRX', 'KIV', 'LIS', 'DUS', 'CWL', 'BRQ', 'HEL', 'BSL', 'IST', 'ESB', 'KRR', 'BSL', 'MXP', 'MXP', 'IST'}
-if len(maria)> len(luis):
-    print("maria ha hecho mas")
-else:
-    print("Luis ha hecho mas")
+maria = ['GYD', 'DUS', 'PFO', 'ESB', 'GRX', 'HEL', 'BUD', 'KRR', 'SVQ', 'OLB', 'PSR', 'HEL', 'PFO', 'SVQ', 'LED']
+luis = ['MXP', 'GRX', 'KIV', 'LIS', 'DUS', 'CWL', 'BRQ', 'HEL', 'BSL', 'IST', 'ESB', 'KRR', 'BSL', 'MXP', 'MXP', 'IST']
 
-print(maria|luis ," , ", len(maria|luis))
-print(maria-luis)
-print(maria^luis," , ", maria&luis)
+lista_maria = list(maria)
+lista_luis = list(luis)
+
+print(len(lista_maria))
+print(len(lista_luis))
+
+con_maria = set(lista_maria)
+con_luis = set(lista_luis)
+print(len(con_maria))
+print(len(con_luis))
+
+
+print(con_maria|con_luis ," , ", len(con_maria|con_luis))
+
+print(con_maria-con_luis)
+
+print(con_maria^con_luis," , ", con_maria&con_luis)
