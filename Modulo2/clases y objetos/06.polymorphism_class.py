@@ -6,21 +6,21 @@ Dado el siguiente código, cambiar las clases para que no falle al ser ejecutado
 class Car:
   on_board = 0
 
-  def load_passangers(self, passengers):
+  def load_passangers(self, passengers, inspector = None):
     self.on_board = len(passengers)
 
 class Bus:
   on_board = 0
 
-  def load_passangers(self, passengers, inspectors):
+  def load_passangers(self, passengers = None, inspectors = None):
     self.on_board = len(passengers) + len(inspectors)
 
 class Bike:
   on_board = 0
-  def load_passangers(self):
+  def load_passangers(self, passengers = None, inspectors = None):
     self.on_board = 1
 
-""" DO NOT CHANGE BEFORE THIS LINE """
+""" DO NOT CHANGE AFTER THIS LINE """
 
 def people_in_transit_on(vehicle, passengers, inspector):
   vehicle.load_passangers(passengers, inspector)

@@ -1,11 +1,11 @@
 import os
 
-i = 20
+i = 2
 cantidad = 15
 
 for _ in range(cantidad):
-    nombre_archivo = fr"Ejercicios_basicos\Iteradores\{i}.py"
+    nombre_archivo = fr"Matplotlib\grafica{i}.py"
 
     with open(nombre_archivo, 'w') as archivo:
-        archivo.write(fr"#Ejercicio{i}")
+        archivo.write(fr"#Grafica{i}")
     i = i + 1
