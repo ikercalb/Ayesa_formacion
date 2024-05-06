@@ -1,0 +1,5 @@
+1;Rafael;Caro;05/01/1992
+2;Rubén;Rodríguez;26/12/1973
+3;Juan;Aguilar;12/06/1961
+4;José Luis;Barrera;25/07/2006
+5;José Manuel;García;22/01/1980

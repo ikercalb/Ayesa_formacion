@@ -1,0 +1,66 @@
+[
+{
+"name": "Sara",
+"surname": "Allerton",
+"pets": [
+{
+"name": "Charlie",
+"age": 3,
+"pet_type": "dog"
+},
+{
+"name": "Rocky",
+"age": 5,
+"pet_type": "dog"
+},
+{
+"name": "Milo",
+"age": 4,
+"pet_type": "dog"
+},
+{
+"name": "Teddy",
+"age": 8,
+"pet_type": "bear"
+}
+]
+},
+{
+"name": "Roberto",
+"surname": "M\u00c3\u00a9ndez",
+"pets": [
+{
+"name": "Simba",
+"age": 3,
+"pet_type": "lion"
+}
+]
+},
+{
+"name": "Marta",
+"surname": "De los Santos",
+"pets": [
+{
+"name": "Loki",
+"age": 2,
+"pet_type": "cat"
+},
+{
+"name": "Bella",
+"age": 5,
+"pet_type": "rabbit"
+}
+]
+},
+{
+"name": "Rafael",
+"surname": "Caro",
+"pets": [
+{
+"name": "Sonic",
+"age": 2,
+"pet_type": "hedgehog"
+}
+]
+}
+]
