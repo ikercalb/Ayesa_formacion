@@ -9,7 +9,7 @@ def encuentraelproximo():
 
 
 class Country(BaseModel):
-    country_id: int = Field(default_factory=encuentraelproximo, alias=id)
+    country_id: int = Field(default_factory=encuentraelproximo, alias="id")
     name: str
     capital: str
     area: int
@@ -31,3 +31,9 @@ async def get_countries():
 async def add_country(country: Country):
     countries.append(country)
     return country
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="127.0.0.1", port=8000)
